@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="content">
+  <div class="room">
+    <div class="room-list"></div>
+    <div class="main"></div>
+  </div>
+  <form class="send">
+    <input type="text" class="send-message">
+    <button>send</button>
+    <div class="help">
+      chat commands:
+      <ul>
+        <li>change nikename:<code>/nike[username]</code></li>
+        <li>Join/create room:<code>/join [room name]</code></li>
+      </ul>
+    </div>
+  </form>
+</div>
+<script src="node_modules/lib/socket.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/chat_ui.js"></script>
+</body>
+</html>
