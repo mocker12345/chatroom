@@ -1,11 +1,13 @@
 /**
  * Created by rancongjie on 15/12/8.
  */
-var http = require('http');
+var servers = require('http');
+var chatServer = require('./lib/chat_server');
 var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
 var cache = {};
+chatServer.listen(servers);
 
 function send404(res) {
   res.writeHead(404, {'Content-Type': 'text-plain'});
@@ -39,7 +41,7 @@ function serverCache(res, cache, absPath) {
   }
 }
 
-var server = http.createServer(function (req, res) {
+var server = servers.createServer(function (req, res) {
   var filePath;
   if (req.url === '/') {
     filePath = 'public/index.html';

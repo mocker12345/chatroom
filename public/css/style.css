@@ -1,0 +1,19 @@
+body{
+  padding: 50px;
+}
+.content {
+  width: 690px;
+  margin: 0 auto;
+}
+.room {
+  background-color: #ddd;
+  margin-bottom: 1em;
+}
+.main {
+  width: 690px;
+  height: 300px;
+  overflow: auto;
+  background: #eee;
+  margin-bottom: 1em;
+  /*margin-right: 10px;*/
+}
