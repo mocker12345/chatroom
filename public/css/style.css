@@ -2,14 +2,19 @@ body{
   padding: 50px;
 }
 .content {
-  width: 690px;
+  width: 800px;
   margin: 0 auto;
 }
-.room {
+.room-box {
   background-color: #ddd;
   margin-bottom: 1em;
 }
-.main {
+.room-list {
+  float: right;
+  height: 300px;
+  width: 100px;
+}
+.message {
   width: 690px;
   height: 300px;
   overflow: auto;
