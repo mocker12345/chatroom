@@ -7,13 +7,14 @@
 </head>
 <body>
 <div class="content">
-  <div class="room">
+  <div class="room-box">
+    <div class="room"></div>
     <div class="room-list"></div>
-    <div class="main"></div>
+    <div class="message"></div>
   </div>
   <form class="send">
     <input type="text" class="send-message">
-    <button>send</button>
+    <button class="submit">send</button>
     <div class="help">
       chat commands:
       <ul>
@@ -23,7 +24,8 @@
     </div>
   </form>
 </div>
-<script src="node_modules/lib/socket.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="js/chat.js"></script>
 <script src="js/chat_ui.js"></script>
 </body>

@@ -7,7 +7,8 @@ var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
 var cache = {};
-chatServer.listen(servers);
+
+
 
 function send404(res) {
   res.writeHead(404, {'Content-Type': 'text-plain'});
@@ -57,3 +58,5 @@ var server = servers.createServer(function (req, res) {
 server.listen(3000, function () {
   console.log('服务启动');
 });
+
+chatServer.listen(server);
